@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISHWI THIMMARAJU — Actor</title>
+<meta name="description" content="Rishwi Thimmaraju — actor. Lead in Krishna Gadu Ante Oka Range (2023). Telugu cinema. Hyderabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   RISHWI THIMMARAJU — "SPOTLIGHT"
+   aesthetic: cinema-noir × gen-z playbill. black, blood-red,
+   golden-hour amber, film grain, screenplay slugs.
+   ============================================================ */
+:root{
+  --ink:#0b0805;
+  --ink-2:#14100b;
+  --red:#e63012;
+  --red-deep:#7a1206;
+  --red-dark:#2b0703;
+  --amber:#ffb37a;
+  --cream:#f4ecdd;
+  --cream-dim:#c9bfa9;
+  --grain-op:.07;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{background:var(--ink);color:var(--cream);overflow-x:hidden}
+body{font-family:'Space Grotesk',sans-serif;font-weight:300;line-height:1.6;cursor:none}
+@media (hover:none){body{cursor:auto}}
+::selection{background:var(--red);color:var(--cream)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:.92;text-transform:uppercase;letter-spacing:-.02em}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0}
+.mono{font-family:'Courier Prime',monospace;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase}
+
+/* ---------- film grain + vignette ---------- */
+.grain{position:fixed;inset:-100px;z-index:120;pointer-events:none;opacity:var(--grain-op);
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 7s steps(10) infinite}
+@keyframes grain{
+  0%,100%{transform:translate(0,0)}10%{transform:translate(-4%,-6%)}20%{transform:translate(-10%,4%)}
+  30%{transform:translate(6%,-8%)}40%{transform:translate(-4%,10%)}50%{transform:translate(-10%,4%)}
+  60%{transform:translate(10%,0)}70%{transform:translate(0,8%)}80%{transform:translate(3%,12%)}90%{transform:translate(-7%,6%)}}
+.vignette{position:fixed;inset:0;z-index:119;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+
+/* ---------- cursor spotlight ---------- */
+.cursor{position:fixed;z-index:130;top:0;left:0;width:14px;height:14px;border-radius:50%;
+  background:var(--red);pointer-events:none;mix-blend-mode:difference;
+  transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s}
+.cursor.big{width:70px;height:70px;background:var(--cream)}
+.cursor-glow{position:fixed;z-index:1;top:0;left:0;width:520px;height:520px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(230,48,18,.10) 0%,transparent 60%);transform:translate(-50%,-50%)}
+@media (hover:none){.cursor,.cursor-glow{display:none}}
+
+/* ---------- preloader ---------- */
+.loader{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:1.4rem;transition:opacity .7s,visibility .7s}
+.loader.done{opacity:0;visibility:hidden}
+.loader .mono{color:var(--red);animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:.25}}
+.loader-count{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(4rem,14vw,9rem);color:var(--cream);line-height:1}
+.loader-bar{width:min(320px,60vw);height:2px;background:rgba(244,236,221,.15);overflow:hidden}
+.loader-bar i{display:block;height:100%;width:0;background:var(--red)}
+
+/* ---------- nav ---------- */
+nav{position:fixed;z-index:110;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem clamp(1.2rem,4vw,3rem);mix-blend-mode:difference}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-.03em;color:var(--cream)}
+.logo span{color:var(--red)}
+.navlinks{display:flex;gap:clamp(.9rem,2.5vw,2rem)}
+.navlinks a{font-family:'Courier Prime',monospace;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream);
+  position:relative;padding:.2rem 0}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--red);transition:width .35s}
+.navlinks a:hover::after{width:100%}
+@media(max-width:720px){.navlinks a:nth-child(n+4){display:none}}
+
+/* ---------- section scaffolding ---------- */
+section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
+.slug{display:flex;align-items:center;gap:1rem;margin-bottom:2.2rem}
+.slug .mono{color:var(--red)}
+.slug::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(230,48,18,.5),transparent)}
+.h-giant{font-size:clamp(2.6rem,8vw,7rem)}
+.h-big{font-size:clamp(2.2rem,6vw,5rem)}
+.outline{color:transparent;-webkit-text-stroke:1.5px var(--cream)}
+.outline-red{color:transparent;-webkit-text-stroke:1.5px var(--red)}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:6rem}
+.hero-spot{position:absolute;top:50%;left:72%;transform:translate(-50%,-50%);width:min(96vh,820px);aspect-ratio:1;
+  border-radius:50%;background:radial-gradient(circle,#ff5a2e 0%,#c21f07 45%,rgba(43,7,3,.0) 72%);
+  filter:blur(10px);opacity:.85;z-index:0}
+.hero-img{position:absolute;z-index:1;top:50%;left:73%;transform:translate(-50%,-50%);height:min(100vh,900px);
+  -webkit-mask-image:radial-gradient(ellipse 56% 52% at 50% 50%,#000 64%,transparent 88%);
+  mask-image:radial-gradient(ellipse 56% 52% at 50% 50%,#000 64%,transparent 88%)}
+.hero-inner{position:relative;z-index:2}
+.hero .kicker{margin-bottom:1.6rem}
+.hero h1{font-size:clamp(3.4rem,12.5vw,11.5rem);position:relative}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line span{display:inline-block;transform:translateY(110%)}
+.hero h1 .fill{color:var(--cream)}
+.hero h1 .holo{color:transparent;-webkit-text-stroke:1.5px var(--red)}
+.hero-tag{margin-top:2rem;max-width:34rem;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--cream-dim)}
+.hero-tag .serif{color:var(--amber);font-size:1.18em}
+.hero-cta{margin-top:2.6rem;display:flex;gap:1rem;flex-wrap:wrap}
+.btn{font-family:'Courier Prime',monospace;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;
+  padding:.95rem 1.7rem;border:1px solid var(--red);color:var(--cream);position:relative;overflow:hidden;display:inline-block}
+.btn i{position:absolute;inset:0;background:var(--red);transform:translateY(101%);transition:transform .4s cubic-bezier(.7,0,.2,1);z-index:-1;font-style:normal}
+.btn:hover i{transform:translateY(0)}
+.btn.solid{background:var(--red)}
+.btn.solid:hover{background:transparent}
+.btn.solid i{background:var(--ink)}
+.hero-meta{position:absolute;bottom:1.4rem;left:clamp(1.2rem,5vw,4rem);right:clamp(1.2rem,5vw,4rem);
+  display:flex;justify-content:space-between;z-index:2;color:var(--cream-dim)}
+@media(max-width:900px){
+  .hero-spot{left:50%;top:34%;opacity:.55}
+  .hero-img{left:50%;top:34%;height:60vh;opacity:.5}
+  .hero-inner{margin-top:20vh}
+}
+
+/* ---------- ticker ---------- */
+.ticker{border-top:1px solid rgba(230,48,18,.35);border-bottom:1px solid rgba(230,48,18,.35);
+  padding:1rem 0;overflow:hidden;white-space:nowrap;background:var(--ink-2)}
+.ticker-track{display:inline-flex;gap:3rem;padding-right:3rem;will-change:transform;animation:tick 26s linear infinite}
+.ticker span{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:1rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--cream-dim)}
+.ticker span b{color:var(--red);font-weight:600}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- ANGLES (headshots) ---------- */
+.angles{background:radial-gradient(ellipse 80% 60% at 50% 40%,#1c0c06 0%,var(--ink) 70%)}
+.angles-head{text-align:center;margin-bottom:4rem}
+.angles-head .serif{color:var(--amber);font-size:clamp(1.2rem,2.2vw,1.6rem)}
+.trio{display:flex;justify-content:center;align-items:flex-end;gap:clamp(.6rem,2vw,2rem);perspective:1200px;max-width:1500px;margin:0 auto}
+.angle-card{position:relative;flex:0 1 430px;border-radius:6px;overflow:hidden;border:1px solid rgba(244,236,221,.12);
+  background:var(--ink-2);transform-style:preserve-3d}
+.angle-card img{width:100%;aspect-ratio:3/4.1;object-fit:cover;filter:saturate(.92)}
+.angle-card.side{flex-basis:360px}
+.angle-label{position:absolute;left:0;right:0;bottom:0;padding:.7rem .9rem;display:flex;justify-content:space-between;
+  background:linear-gradient(transparent,rgba(11,8,5,.92));color:var(--cream-dim)}
+.angle-deg{color:var(--red)}
+.angles-note{text-align:center;margin-top:3rem;color:var(--cream-dim);font-size:.95rem}
+.angles-note .serif{color:var(--cream)}
+@media(max-width:760px){
+  .trio{flex-direction:column;align-items:center}
+  .angle-card,.angle-card.side{flex-basis:auto;width:min(78vw,340px)}
+}
+
+/* ---------- ROLES ---------- */
+.role{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:center;
+  max-width:1250px;margin:0 auto 7rem}
+.role:last-child{margin-bottom:0}
+.role.flip .role-media{order:2}
+.role-media{position:relative}
+.role-media img{border-radius:6px;border:1px solid rgba(244,236,221,.12);box-shadow:0 40px 80px -30px rgba(230,48,18,.25)}
+.sticker{position:absolute;z-index:3;font-family:'Courier Prime',monospace;font-size:.62rem;letter-spacing:.18em;
+  text-transform:uppercase;background:var(--amber);color:var(--ink);padding:.5rem .8rem;border-radius:2px;
+  box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.sticker.red{background:var(--red);color:var(--cream)}
+.role-copy .was{color:var(--cream-dim);font-size:clamp(1rem,1.4vw,1.15rem)}
+.role-copy h3{font-size:clamp(2.6rem,5.5vw,4.6rem);margin:.4rem 0 .8rem}
+.role-copy h3 .serif{display:block;font-size:.42em;color:var(--amber);margin-top:.5rem}
+.role-copy p{color:var(--cream-dim);max-width:34rem;margin-bottom:1.2rem}
+.role-facts{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.fact{font-family:'Courier Prime',monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+  border:1px solid rgba(244,236,221,.25);padding:.45rem .8rem;border-radius:99px;color:var(--cream-dim)}
+.fact.hot{border-color:var(--red);color:var(--red)}
+@media(max-width:860px){.role{grid-template-columns:1fr}.role.flip .role-media{order:0}}
+
+/* ---------- B-ROLL horizontal ---------- */
+.broll{padding-left:0;padding-right:0;overflow:hidden}
+.broll .slug{padding:0 clamp(1.2rem,5vw,4rem)}
+.broll h2{padding:0 clamp(1.2rem,5vw,4rem);margin-bottom:3rem}
+.broll-track{display:flex;gap:clamp(1rem,2.5vw,2rem);padding:1rem clamp(1.2rem,5vw,4rem) 2rem;width:max-content}
+.broll-card{position:relative;flex:0 0 auto;width:clamp(240px,30vw,380px);border-radius:6px;overflow:hidden;
+  border:1px solid rgba(244,236,221,.12);transform:rotate(var(--r,0deg));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.broll-card:hover{transform:rotate(0) scale(1.03);z-index:4}
+.broll-card.zoom img{transform:scale(1.5);transform-origin:50% 58%}
+.broll-card img{aspect-ratio:3/4.2;object-fit:cover;width:100%}
+.broll-card .tag{position:absolute;bottom:.8rem;left:.8rem;font-family:'Courier Prime',monospace;font-size:.6rem;
+  letter-spacing:.16em;text-transform:uppercase;background:rgba(11,8,5,.8);border:1px solid rgba(230,48,18,.5);
+  color:var(--cream);padding:.35rem .6rem;border-radius:2px}
+@media(max-width:860px){.broll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.broll-track{padding-bottom:1rem}}
+
+/* ---------- MAKING OF ---------- */
+.making{background:linear-gradient(180deg,var(--ink) 0%,#180a05 50%,var(--ink) 100%)}
+.making-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2.5rem,6vw,6rem);max-width:1250px;margin:0 auto;align-items:start}
+.chapter{border-left:1px solid rgba(230,48,18,.4);padding:0 0 2.6rem 1.6rem;position:relative}
+.chapter:last-child{padding-bottom:0}
+.chapter::before{content:"";position:absolute;left:-5px;top:.4rem;width:9px;height:9px;border-radius:50%;background:var(--red)}
+.chapter .mono{color:var(--red)}
+.chapter h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.25rem;margin:.5rem 0 .3rem;text-transform:uppercase}
+.chapter p{color:var(--cream-dim);font-size:.95rem;max-width:28rem}
+.making-side{position:sticky;top:8rem}
+.making-side img{border-radius:6px;border:1px solid rgba(244,236,221,.12)}
+.making-side .caption{margin-top:1rem;color:var(--cream-dim)}
+.quantum{margin-top:2.4rem;padding:1.4rem;border:1px dashed rgba(255,179,122,.5);border-radius:6px;color:var(--cream-dim);font-size:.95rem}
+.quantum b{color:var(--amber);font-weight:500}
+@media(max-width:860px){.making-grid{grid-template-columns:1fr}.making-side{position:relative;top:0}}
+
+/* ---------- OFF CAMERA ---------- */
+.offcam-cloud{display:flex;flex-wrap:wrap;gap:1rem;max-width:1000px;margin:0 auto;justify-content:center}
+.chip{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;
+  font-size:clamp(.9rem,1.8vw,1.35rem);padding:.9rem 1.6rem;border-radius:99px;border:1px solid rgba(244,236,221,.25);
+  transition:all .3s;transform:rotate(var(--r,0deg))}
+.chip:hover{background:var(--red);border-color:var(--red);transform:rotate(0) scale(1.06)}
+.chip.gold{border-color:var(--amber);color:var(--amber)}
+.chip.gold:hover{background:var(--amber);color:var(--ink)}
+.vitals{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(1.5rem,5vw,4.5rem);margin-top:5rem;
+  padding-top:3rem;border-top:1px solid rgba(244,236,221,.12);max-width:1000px;margin-left:auto;margin-right:auto}
+.vital{text-align:center}
+.vital .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--cream)}
+.vital .num span{color:var(--red)}
+.vital .mono{color:var(--cream-dim);margin-top:.3rem}
+
+/* ---------- FINALE ---------- */
+.finale{min-height:90svh;display:flex;flex-direction:column;justify-content:center;text-align:center;
+  background:radial-gradient(circle at 50% 120%,#3a0b05 0%,var(--ink) 60%)}
+.finale .mono{color:var(--red)}
+.finale h2{font-size:clamp(3rem,11vw,9.5rem);margin:1.5rem 0}
+.finale h2 .serif{text-transform:none;color:var(--amber)}
+.email-big{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(1.1rem,3.4vw,2.4rem);
+  color:var(--cream);border-bottom:2px solid var(--red);padding-bottom:.3rem;transition:color .3s,letter-spacing .4s}
+.email-big:hover{color:var(--red);letter-spacing:.02em}
+.socials{margin-top:3.4rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+footer{padding:2.2rem clamp(1.2rem,5vw,4rem);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  border-top:1px solid rgba(244,236,221,.1);color:var(--cream-dim)}
+footer .mono{letter-spacing:.2em}
+
+/* reveal helpers */
+.rv{opacity:0;transform:translateY(40px)}
+</style>
+</head>
+<body>
+
+<!-- preloader -->
+<div class="loader" id="loader">
+  <div class="mono">Scene 01 — Take ∞ · Rolling…</div>
+  <div class="loader-count" id="loadCount">00</div>
+  <div class="loader-bar"><i id="loadBar"></i></div>
+</div>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav>
+  <a class="logo" href="#top">R<span>T</span>.</a>
+  <div class="navlinks">
+    <a href="#angles" data-hover>The Angles</a>
+    <a href="#roles" data-hover>The Roles</a>
+    <a href="#broll" data-hover>B-Roll</a>
+    <a href="#making" data-hover>Making Of</a>
+    <a href="#cast" data-hover>Cast Me</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-spot" id="heroSpot"></div>
+  <img class="hero-img" id="heroImg" src="assets/boombox-sit.jpg" alt="Rishwi Thimmaraju — seated with boombox in red spotlight">
+  <div class="hero-inner">
+    <div class="kicker slug" style="max-width:520px"><span class="mono">Int. Hyderabad — Night</span></div>
+    <h1>
+      <span class="line"><span class="fill">Rishwi</span></span>
+      <span class="line"><span class="holo">Thimma</span><span class="fill">raju</span></span>
+    </h1>
+    <p class="hero-tag">Actor. <span class="serif">Occasionally a shepherd, a rebel, a hopeless romantic</span> — whatever the script demands. Trained at Ramanaidu Film School &amp; Lee Strasberg. Fluent in drama, fluent-ish in quantum physics.</p>
+    <div class="hero-cta">
+      <a class="btn solid" href="#roles" data-hover>See the characters<i></i></a>
+      <a class="btn" href="#cast" data-hover>Cast me<i></i></a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <span class="mono">Lead — Krishna Gadu Ante Oka Range</span>
+    <span class="mono" style="text-align:right">Est. Telugu Cinema · 2023</span>
+  </div>
+</header>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Actor <b>✦</b></span><span>Lead, Not Extra <b>✦</b></span><span>Method &amp; Madness <b>✦</b></span>
+    <span>Taekwondo Black Belt <b>✦</b></span><span>Sings His Own Sad Songs <b>✦</b></span><span>Telugu Cinema <b>✦</b></span>
+    <span>Streaming on Aha <b>✦</b></span><span>Quantum Physicist, Legally <b>✦</b></span>
+  </div>
+</div>
+
+<!-- ============ THE ANGLES ============ -->
+<section class="angles" id="angles">
+  <div class="slug"><span class="mono">Scene 02 — Character Range</span></div>
+  <div class="angles-head">
+    <h2 class="h-big">Every angle<br><span class="outline-red">has a plot twist</span></h2>
+    <p class="serif">left, centre, right — same face, three different films.</p>
+  </div>
+  <div class="trio" id="trio">
+    <div class="angle-card side left" data-hover>
+      <img src="assets/profile-left.jpg" alt="Rishwi — left view">
+      <div class="angle-label mono"><span>The Brooder</span><span class="angle-deg">−60°</span></div>
+    </div>
+    <div class="angle-card center" data-hover>
+      <img src="assets/front.jpg" alt="Rishwi — front headshot">
+      <div class="angle-label mono"><span>The Lead</span><span class="angle-deg">0°</span></div>
+    </div>
+    <div class="angle-card side right" data-hover>
+      <img src="assets/profile-gaze.jpg" alt="Rishwi — right profile">
+      <div class="angle-label mono"><span>The Trouble</span><span class="angle-deg">+60°</span></div>
+    </div>
+  </div>
+  <p class="angles-note rv">Height <span class="serif">5'8"</span> · Hair <span class="serif">black, uncooperative</span> · Eyes <span class="serif">camera-ready</span></p>
+</section>
+
+<!-- ============ THE ROLES ============ -->
+<section id="roles">
+  <div class="slug"><span class="mono">Scene 03 — The Characters I've Been</span></div>
+  <h2 class="h-giant rv" style="margin-bottom:5rem">Previously,<br><span class="outline">I was…</span></h2>
+
+  <!-- Krishna -->
+  <div class="role">
+    <div class="role-media rv" data-hover>
+      <span class="sticker red" style="top:-14px;right:18px;transform:rotate(4deg)">100+ theatres</span>
+      <span class="sticker" style="bottom:22px;left:-10px;transform:rotate(-5deg)">Now streaming on Aha</span>
+      <img src="assets/poster-krishna.jpg" alt="Krishna Gadu Ante Oka Range — theatrical poster">
+    </div>
+    <div class="role-copy rv">
+      <p class="was mono">Ext. Village — Golden Hour · 2023</p>
+      <h3>Krishna<span class="serif">in Krishna Gadu Ante Oka Range</span></h3>
+      <p>A village shepherd with a slingshot, a stubborn heart and his father's unfinished dream. Krishna fights through every twist life throws at him — and still wins the girl. Lead role, theatrical release August 2023.</p>
+      <div class="role-facts">
+        <span class="fact hot">Lead role</span><span class="fact">Feature film</span>
+        <span class="fact">Theatrical · Aug 2023</span><span class="fact">Streaming on Aha</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Film school -->
+  <div class="role flip">
+    <div class="role-media rv" data-hover>
+      <span class="sticker" style="top:-14px;left:18px;transform:rotate(-4deg)">Film school cuts</span>
+      <img src="assets/spotlight-arms.jpg" alt="Rishwi — arms out in white spotlight">
+    </div>
+    <div class="role-copy rv">
+      <p class="was mono">Where it started</p>
+      <h3>Two Leads<span class="serif">in film-school shorts</span></h3>
+      <p>Before the feature film: two short films at Ramanaidu Film School, both as the lead. One, a drama about education colliding with passion. The other, a mystery thriller — because range is the whole point.</p>
+      <div class="role-facts">
+        <span class="fact">Drama short</span><span class="fact">Mystery thriller</span><span class="fact hot">Both leads, obviously</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ B-ROLL ============ -->
+<section class="broll" id="broll">
+  <div class="slug"><span class="mono">Scene 04 — B-Roll</span></div>
+  <h2 class="h-big rv">Looks that <span class="outline-red">book</span></h2>
+  <div class="broll-wrap">
+    <div class="broll-track" id="brollTrack">
+      <div class="broll-card" style="--r:1deg" data-hover><img src="assets/rose.jpg" alt="Red sweater with rose, red spotlight"><span class="tag">The Romantic</span></div>
+      <div class="broll-card" style="--r:-2deg" data-hover><img src="assets/greaser-chair.jpg" alt="Greaser look with boombox"><span class="tag">'80s troublemaker</span></div>
+      <div class="broll-card" style="--r:1.5deg" data-hover><img src="assets/hero-chair.jpg" alt="Leather jacket, arm over chair, golden light"><span class="tag">Golden hour</span></div>
+      <div class="broll-card" style="--r:-1deg" data-hover><img src="assets/spotlight-jacket.jpg" alt="Spotlight leather jacket"><span class="tag">Opening night</span></div>
+      <div class="broll-card" style="--r:2deg" data-hover><img src="assets/earphones.jpg" alt="Red spotlight with earphones"><span class="tag">Lo-fi heartbreak</span></div>
+      <div class="broll-card" style="--r:-2.2deg" data-hover><img src="assets/greaser-reach.jpg" alt="Reaching out with boombox"><span class="tag">Come dance</span></div>      <div class="broll-card" style="--r:-1.5deg" data-hover><img src="assets/reach.jpg" alt="Hand reaching to camera"><span class="tag">Breaking the 4th wall</span></div>
+      <div class="broll-card" style="--r:2.2deg" data-hover><img src="assets/greaser-lean.jpg" alt="Leaning with boombox"><span class="tag">Detention, again</span></div>
+      <div class="broll-card" style="--r:-1deg" data-hover><img src="assets/pensive.jpg" alt="Hand on cheek, moody golden light"><span class="tag">Curtain call</span></div>
+      <div class="broll-card" style="--r:1.8deg" data-hover><img src="assets/denim-portrait.jpg" alt="Blue corduroy shirt, brick wall"><span class="tag">Corduroy season</span></div>
+      <div class="broll-card" style="--r:-2deg" data-hover><img src="assets/denim-retro.jpg" alt="Retro look with sunglasses"><span class="tag">'70s rewind</span></div>
+      <div class="broll-card" style="--r:1.2deg" data-hover><img src="assets/denim-profile.jpg" alt="Profile in winter sun"><span class="tag">Between takes</span></div>
+      <div class="broll-card" style="--r:-1.6deg" data-hover><img src="assets/orange-polo.jpg" alt="Orange knit polo on a rooftop"><span class="tag">Main character weather</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAKING OF ============ -->
+<section class="making" id="making">
+  <div class="slug"><span class="mono">Scene 05 — The Making Of</span></div>
+  <h2 class="h-big rv" style="margin-bottom:4rem">Trained,<br><span class="outline">not lucky</span></h2>
+  <div class="making-grid">
+    <div>
+      <div class="chapter rv">
+        <span class="mono">Act I — Craft</span>
+        <h4>Diploma in Acting · Ramanaidu Film School</h4>
+        <p>Full-time training — character research, improvisation, method acting, movement. The place where "act natural" finally started meaning something.</p>
+      </div>
+      <div class="chapter rv">
+        <span class="mono">Act II — Sharpening</span>
+        <h4>Workshops · Lee Strasberg Film Institute</h4>
+        <p>Two months inside the home of method acting, breaking scenes down to the breath.</p>
+      </div>
+      <div class="chapter rv">
+        <span class="mono">Act III — Plot Twist</span>
+        <h4>MSc Quantum Information Science · USC</h4>
+        <p>Yes, really. A B.Tech in Computer Science (Anurag University), then a master's at the University of Southern California. The discipline of a scientist, the chaos of an artist.</p>
+      </div>
+      <div class="quantum rv"><b>Director's note:</b> he can explain superposition — being two things at once — and then demonstrate it on camera. Shepherd and dreamer. Physicist and performer.</div>
+    </div>
+    <div class="making-side rv" data-hover>
+      <span class="sticker" style="top:-14px;right:18px;transform:rotate(3deg)">Off-set, off-guard</span>
+      <img src="assets/hoodie.jpg" alt="Rishwi — natural look, black hoodie">
+      <p class="caption serif">"I believe in doing good and impactful work."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFF CAMERA ============ -->
+<section id="offcam">
+  <div class="slug"><span class="mono">Scene 06 — When Cameras Are Off</span></div>
+  <h2 class="h-big rv" style="text-align:center;margin-bottom:4rem">Still <span class="outline-red">dramatic</span></h2>
+  <div class="offcam-cloud rv">
+    <span class="chip" style="--r:-2deg" data-hover>Method Acting</span>
+    <span class="chip gold" style="--r:1.5deg" data-hover>Taekwondo · Black Belt</span>
+    <span class="chip" style="--r:-1deg" data-hover>Improvisation</span>
+    <span class="chip" style="--r:2deg" data-hover>Dance</span>
+    <span class="chip gold" style="--r:-1.5deg" data-hover>Writes His Own Songs</span>
+    <span class="chip" style="--r:1deg" data-hover>Singing</span>
+    <span class="chip" style="--r:-2.5deg" data-hover>Movement</span>
+    <span class="chip" style="--r:2.5deg" data-hover>Character Research</span>
+  </div>
+  <div class="vitals">
+    <div class="vital rv"><div class="num">5'<span>8"</span></div><div class="mono">Height</div></div>
+    <div class="vital rv"><div class="num">65<span>kg</span></div><div class="mono">Weight</div></div>
+    <div class="vital rv"><div class="num">100<span>+</span></div><div class="mono">Theatres · Debut lead</div></div>
+    <div class="vital rv"><div class="num">HYD<span>⇄</span>LA</div><div class="mono">Based / Available</div></div>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="finale" id="cast">
+  <span class="mono rv">Final Scene — Smash Cut To:</span>
+  <h2 class="rv">Roll credits.<br><span class="serif">then cast me.</span></h2>
+  <p class="rv" style="color:var(--cream-dim);margin-bottom:2.4rem">Leading roles · Features · Series — Telugu &amp; English</p>
+  <a class="email-big rv" href="mailto:rishwibtofficial@gmail.com" data-hover>rishwibtofficial@gmail.com</a>
+  <div class="socials rv">
+    <a class="btn" href="https://www.instagram.com/rishwibtofficial/" target="_blank" rel="noopener" data-hover>@rishwibtofficial<i></i></a>
+    <a class="btn" href="https://www.imdb.com/name/nm13479870/" target="_blank" rel="noopener" data-hover>IMDb<i></i></a>
+  </div>
+</section>
+
+<footer>
+  <span class="mono">© 2026 Rishwi Thimmaraju</span>
+  <span class="mono">Written, directed &amp; lived by Rishwi</span>
+  <span class="mono">Fin.</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+window.addEventListener('load',()=>{
+  const hasGsap = typeof gsap !== 'undefined';
+  if(hasGsap) gsap.registerPlugin(ScrollTrigger);
+
+  /* ---- preloader ---- */
+  const loader=document.getElementById('loader'),count=document.getElementById('loadCount'),bar=document.getElementById('loadBar');
+  let p=0;
+  const int=setInterval(()=>{
+    p=Math.min(100,p+Math.ceil(Math.random()*14));
+    count.textContent=String(p).padStart(2,'0');bar.style.width=p+'%';
+    if(p>=100){clearInterval(int);setTimeout(intro,250);}
+  },70);
+
+  function intro(){
+    loader.classList.add('done');
+    if(!hasGsap){document.querySelectorAll('.hero h1 .line span').forEach(s=>s.style.transform='none');revealFallback();return;}
+    gsap.to('.hero h1 .line span',{y:0,duration:1.1,stagger:.12,ease:'power4.out',delay:.15});
+    gsap.from('.hero-tag,.hero-cta,.kicker,.hero-meta',{opacity:0,y:30,duration:1,stagger:.1,delay:.5,ease:'power3.out'});
+    gsap.from('#heroSpot',{scale:.2,opacity:0,duration:1.6,ease:'expo.out',delay:.2});
+    gsap.from('#heroImg',{opacity:0,scale:1.15,duration:1.6,ease:'expo.out',delay:.35});
+  }
+
+  if(!hasGsap){return;}
+
+  /* ---- generic reveals ---- */
+  document.querySelectorAll('.rv').forEach(el=>{
+    gsap.to(el,{opacity:1,y:0,duration:1,ease:'power3.out',
+      scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+
+  /* ---- hero parallax ---- */
+  gsap.to('#heroImg',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('#heroSpot',{yPercent:20,scale:1.15,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* ---- headshot trio fan-out ---- */
+  const mm=gsap.matchMedia();
+  mm.add('(min-width: 761px)',()=>{
+    const tl=gsap.timeline({scrollTrigger:{trigger:'#trio',start:'top 80%',end:'top 30%',scrub:.6}});
+    tl.from('.angle-card.center',{y:60,scale:.92},0)
+      .from('.angle-card.left',{x:200,rotationY:35,opacity:0},0)
+      .from('.angle-card.right',{x:-200,rotationY:-35,opacity:0},0);
+    /* slow idle sway on the side cards */
+    gsap.to('.angle-card.left',{rotationY:8,duration:3.2,yoyo:true,repeat:-1,ease:'sine.inOut',delay:1});
+    gsap.to('.angle-card.right',{rotationY:-8,duration:3.2,yoyo:true,repeat:-1,ease:'sine.inOut',delay:1.2});
+  });
+
+  /* ---- role posters slight parallax ---- */
+  document.querySelectorAll('.role-media').forEach(m=>{
+    gsap.fromTo(m,{y:40},{y:-40,ease:'none',scrollTrigger:{trigger:m,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+
+  /* ---- b-roll horizontal drag on desktop ---- */
+  mm.add('(min-width: 861px)',()=>{
+    const track=document.getElementById('brollTrack');
+    const dist=()=>Math.max(0,track.scrollWidth-window.innerWidth);
+    gsap.to(track,{x:()=>-dist(),ease:'none',
+      scrollTrigger:{trigger:'.broll',start:'top top',end:()=>'+='+dist(),pin:true,scrub:.8,invalidateOnRefresh:true}});
+  });
+
+  /* ---- finale zoom ---- */
+  gsap.from('.finale h2',{scale:.85,transformOrigin:'50% 100%',ease:'none',
+    scrollTrigger:{trigger:'.finale',start:'top bottom',end:'center center',scrub:true}});
+
+  function revealFallback(){document.querySelectorAll('.rv').forEach(el=>{el.style.opacity=1;el.style.transform='none';});}
+
+  /* ---- cursor ---- */
+  const cur=document.getElementById('cursor'),glow=document.getElementById('cursorGlow');
+  if(window.matchMedia('(hover:hover)').matches){
+    window.addEventListener('mousemove',e=>{
+      gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.12,overwrite:'auto'});
+      gsap.to(glow,{x:e.clientX,y:e.clientY,duration:.5,overwrite:'auto'});
+    });
+    document.querySelectorAll('a,[data-hover]').forEach(el=>{
+      el.addEventListener('mouseenter',()=>cur.classList.add('big'));
+      el.addEventListener('mouseleave',()=>cur.classList.remove('big'));
+    });
+  }
+});
+</script>
+</body>
+</html>
