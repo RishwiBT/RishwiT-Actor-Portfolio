@@ -89,7 +89,7 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
 .outline-red{color:transparent;-webkit-text-stroke:1.5px var(--red)}
 
 /* ---------- HERO ---------- */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:6rem}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:6rem;padding-bottom:5rem}
 .hero-spot{position:absolute;top:50%;left:72%;transform:translate(-50%,-50%);width:min(96vh,820px);aspect-ratio:1;
   border-radius:50%;background:radial-gradient(circle,#ff5a2e 0%,#c21f07 45%,rgba(43,7,3,.0) 72%);
   filter:blur(10px);opacity:.85;z-index:0}
@@ -119,6 +119,7 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
   .hero-spot{left:50%;top:34%;opacity:.55}
   .hero-img{left:50%;top:34%;height:60vh;opacity:.5}
   .hero-inner{margin-top:20vh}
+  .hero-meta{position:static;flex-direction:column;align-items:flex-start;gap:.5rem;margin-top:2.5rem}
 }
 
 /* ---------- ticker ---------- */
