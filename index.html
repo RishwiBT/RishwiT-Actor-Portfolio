@@ -172,7 +172,8 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
 
 /* ---------- B-ROLL horizontal ---------- */
 #roles{padding-bottom:clamp(2rem,4vw,3.5rem)}
-.broll{padding-left:0;padding-right:0;padding-top:clamp(2rem,4vw,3.5rem);overflow:hidden}
+.making{padding-top:clamp(2rem,4vw,3.5rem)}
+.broll{padding-left:0;padding-right:0;overflow:hidden}
 .broll .slug{padding:0 clamp(1.2rem,5vw,4rem)}
 .broll h2{padding:0 clamp(1.2rem,5vw,4rem);margin-bottom:3rem}
 .broll-track{display:flex;gap:clamp(1rem,2.5vw,2rem);padding:1rem clamp(1.2rem,5vw,4rem) 2rem;width:max-content}
@@ -180,6 +181,8 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
   border:1px solid rgba(244,236,221,.12);transform:rotate(var(--r,0deg));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .broll-card:hover{transform:rotate(0) scale(1.03);z-index:4}
 .broll-card.zoom img{transform:scale(1.5);transform-origin:50% 58%}
+.broll-card.zoom-sm img{transform:scale(1.22);transform-origin:50% 42%}
+.broll-card.zoom-mid img{transform:scale(1.45);transform-origin:50% 30%}
 .broll-card img{aspect-ratio:3/4.2;object-fit:cover;width:100%}
 .broll-card .tag{position:absolute;bottom:.8rem;left:.8rem;font-family:'Courier Prime',monospace;font-size:.6rem;
   letter-spacing:.16em;text-transform:uppercase;background:rgba(11,8,5,.8);border:1px solid rgba(230,48,18,.5);
@@ -254,8 +257,8 @@ footer .mono{letter-spacing:.2em}
   <div class="navlinks">
     <a href="#angles" data-hover>The Angles</a>
     <a href="#roles" data-hover>The Roles</a>
-    <a href="#broll" data-hover>B-Roll</a>
     <a href="#making" data-hover>Making Of</a>
+    <a href="#broll" data-hover>B-Roll</a>
     <a href="#cast" data-hover>Cast Me</a>
   </div>
 </nav>
@@ -355,31 +358,9 @@ footer .mono{letter-spacing:.2em}
   </div>
 </section>
 
-<!-- ============ B-ROLL ============ -->
-<section class="broll" id="broll">
-  <div class="slug"><span class="mono">Scene 04 — B-Roll</span></div>
-  <h2 class="h-big rv">Looks that <span class="outline-red">book</span></h2>
-  <div class="broll-wrap">
-    <div class="broll-track" id="brollTrack">
-      <div class="broll-card" style="--r:1deg" data-hover><img src="assets/rose.jpg" alt="Red sweater with rose, red spotlight"><span class="tag">The Romantic</span></div>
-      <div class="broll-card" style="--r:-2deg" data-hover><img src="assets/greaser-chair.jpg" alt="Greaser look with boombox"><span class="tag">'80s troublemaker</span></div>
-      <div class="broll-card" style="--r:1.5deg" data-hover><img src="assets/hero-chair.jpg" alt="Leather jacket, arm over chair, golden light"><span class="tag">Golden hour</span></div>
-      <div class="broll-card" style="--r:-1deg" data-hover><img src="assets/spotlight-jacket.jpg" alt="Spotlight leather jacket"><span class="tag">Opening night</span></div>
-      <div class="broll-card" style="--r:2deg" data-hover><img src="assets/earphones.jpg" alt="Red spotlight with earphones"><span class="tag">Lo-fi heartbreak</span></div>
-      <div class="broll-card" style="--r:-2.2deg" data-hover><img src="assets/greaser-reach.jpg" alt="Reaching out with boombox"><span class="tag">Come dance</span></div>      <div class="broll-card" style="--r:-1.5deg" data-hover><img src="assets/reach.jpg" alt="Hand reaching to camera"><span class="tag">Breaking the 4th wall</span></div>
-      <div class="broll-card" style="--r:2.2deg" data-hover><img src="assets/greaser-lean.jpg" alt="Leaning with boombox"><span class="tag">Detention, again</span></div>
-      <div class="broll-card" style="--r:-1deg" data-hover><img src="assets/pensive.jpg" alt="Hand on cheek, moody golden light"><span class="tag">Curtain call</span></div>
-      <div class="broll-card" style="--r:1.8deg" data-hover><img src="assets/denim-portrait.jpg" alt="Blue corduroy shirt, brick wall"><span class="tag">Corduroy season</span></div>
-      <div class="broll-card" style="--r:-2deg" data-hover><img src="assets/denim-retro.jpg" alt="Retro look with sunglasses"><span class="tag">'70s rewind</span></div>
-      <div class="broll-card" style="--r:1.2deg" data-hover><img src="assets/denim-profile.jpg" alt="Profile in winter sun"><span class="tag">Between takes</span></div>
-      <div class="broll-card" style="--r:-1.6deg" data-hover><img src="assets/orange-polo.jpg" alt="Orange knit polo on a rooftop"><span class="tag">Main character weather</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ MAKING OF ============ -->
 <section class="making" id="making">
-  <div class="slug"><span class="mono">Scene 05 — The Making Of</span></div>
+  <div class="slug"><span class="mono">Scene 04 — The Making Of</span></div>
   <h2 class="h-big rv" style="margin-bottom:4rem">Trained,<br><span class="outline">not lucky</span></h2>
   <div class="making-grid">
     <div>
@@ -404,6 +385,28 @@ footer .mono{letter-spacing:.2em}
       <span class="sticker" style="top:-14px;right:18px;transform:rotate(3deg)">Off-set, off-guard</span>
       <img src="assets/hoodie.jpg" alt="Rishwi — natural look, black hoodie">
       <p class="caption serif">"I believe in doing good and impactful work."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ B-ROLL ============ -->
+<section class="broll" id="broll">
+  <div class="slug"><span class="mono">Scene 05 — B-Roll</span></div>
+  <h2 class="h-big rv">Looks that <span class="outline-red">book</span></h2>
+  <div class="broll-wrap">
+    <div class="broll-track" id="brollTrack">
+      <div class="broll-card" style="--r:1deg" data-hover><img src="assets/front.jpg" alt="Leather jacket, front headshot"><span class="tag">The Lead</span></div>
+      <div class="broll-card" style="--r:-2deg" data-hover><img src="assets/rose.jpg" alt="Red sweater with rose, red spotlight"><span class="tag">The Romantic</span></div>
+      <div class="broll-card" style="--r:1.5deg" data-hover><img src="assets/greaser-reach.jpg" alt="Reaching out with boombox"><span class="tag">Come dance</span></div>
+      <div class="broll-card zoom-sm" style="--r:-1deg" data-hover><img src="assets/earphones.jpg" alt="Red spotlight with earphones"><span class="tag">Lo-fi heartbreak</span></div>
+      <div class="broll-card" style="--r:2deg" data-hover><img src="assets/denim-portrait.jpg" alt="Blue corduroy shirt, brick wall"><span class="tag">Corduroy season</span></div>
+      <div class="broll-card" style="--r:-2.2deg" data-hover><img src="assets/denim-profile.jpg" alt="Profile in winter sun"><span class="tag">Between takes</span></div>
+      <div class="broll-card" style="--r:-1.5deg" data-hover><img src="assets/orange-polo.jpg" alt="Orange knit polo on a rooftop"><span class="tag">Main character weather</span></div>
+      <div class="broll-card zoom-sm" style="--r:2.2deg" data-hover><img src="assets/boombox-head.jpg" alt="Boombox by the head, side light"><span class="tag">Volume up</span></div>
+      <div class="broll-card" style="--r:-1deg" data-hover><img src="assets/greaser-chair.jpg" alt="Greaser look with boombox, foot on chair"><span class="tag">'80s troublemaker</span></div>
+      <div class="broll-card" style="--r:1.8deg" data-hover><img src="assets/reach.jpg" alt="Hand reaching to camera"><span class="tag">Breaking the 4th wall</span></div>
+      <div class="broll-card zoom-mid" style="--r:-2deg" data-hover><img src="assets/spotlight-jacket.jpg" alt="Spotlight leather jacket"><span class="tag">Opening night</span></div>
+      <div class="broll-card" style="--r:1.2deg" data-hover><img src="assets/greaser-lean.jpg" alt="Leaning with boombox"><span class="tag">Detention, again</span></div>
     </div>
   </div>
 </section>
