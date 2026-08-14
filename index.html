@@ -169,7 +169,13 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
 .fact{font-family:'Courier Prime',monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
   border:1px solid rgba(244,236,221,.25);padding:.45rem .8rem;border-radius:99px;color:var(--cream-dim)}
 .fact.hot{border-color:var(--red);color:var(--red)}
-@media(max-width:860px){.role{grid-template-columns:1fr}.role.flip .role-media{order:0}}
+.role-trailer{align-items:flex-start}
+.role-trailer .role-copy{margin-top:clamp(-3.5rem,-4vw,-1.5rem)}
+.trailer-label{color:var(--red);margin-top:1.8rem;margin-bottom:.7rem}
+.trailer-embed{position:relative;width:100%;max-width:34rem;aspect-ratio:16/9;border-radius:6px;overflow:hidden;
+  border:1px solid rgba(244,236,221,.12);box-shadow:0 30px 60px -25px rgba(230,48,18,.3)}
+.trailer-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+@media(max-width:860px){.role{grid-template-columns:1fr}.role.flip .role-media{order:0}.role-trailer .role-copy{margin-top:1.4rem}}
 
 /* ---------- B-ROLL horizontal ---------- */
 #roles{padding-bottom:clamp(2rem,4vw,3.5rem)}
@@ -231,6 +237,7 @@ section{position:relative;padding:clamp(5rem,10vw,9rem) clamp(1.2rem,5vw,4rem)}
   color:var(--cream);border-bottom:2px solid var(--red);padding-bottom:.3rem;transition:color .3s,letter-spacing .4s}
 .email-big:hover{color:var(--red);letter-spacing:.02em}
 .socials{margin-top:3.4rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.socials .btn{font-size:1.05rem;letter-spacing:.18em;padding:1.1rem 2.1rem}
 footer{padding:2.2rem clamp(1.2rem,5vw,4rem);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
   border-top:1px solid rgba(244,236,221,.1);color:var(--cream-dim)}
 footer .mono{letter-spacing:.2em}
@@ -325,7 +332,7 @@ footer .mono{letter-spacing:.2em}
   <h2 class="h-giant rv" style="margin-bottom:5rem">Previously,<br><span class="outline">I was…</span></h2>
 
   <!-- Krishna -->
-  <div class="role">
+  <div class="role role-trailer">
     <div class="role-media rv" data-hover>
       <span class="sticker red" style="top:-14px;right:18px;transform:rotate(4deg)">100+ theatres</span>
       <span class="sticker" style="bottom:22px;left:-10px;transform:rotate(-5deg)">Now streaming on Aha</span>
@@ -338,6 +345,10 @@ footer .mono{letter-spacing:.2em}
       <div class="role-facts">
         <span class="fact hot">Lead role</span><span class="fact">Feature film</span>
         <span class="fact">Theatrical · Aug 2023</span><span class="fact">Streaming on Aha</span>
+      </div>
+      <p class="mono trailer-label">▶ Watch the trailer</p>
+      <div class="trailer-embed">
+        <iframe src="https://www.youtube.com/embed/Uz5tcepOa1o" title="Krishna Gadu Ante Oka Range — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </div>
